@@ -18,7 +18,8 @@
         background: linear-gradient(to bottom, #d5f2e3, #73ba9b, #003e1f);
         background-color: var(--light-blue);
         color: var(--dark-green);
-        position: relative; /* Required for absolute positioning of snowflakes */
+        position: relative; 
+        
       }
 
       #main-header {
@@ -39,24 +40,23 @@
       }
 
       #main-nav ul li {
-        margin: 0 10px; /* Adjusted spacing between the buttons */
+        margin: 0 10px; 
       }
 
       #main-nav ul li a {
-        color: black; /* Black text */
-        background-color: yellow; /* Yellow background */
+        color: black; 
+        background-color: yellow; 
         text-decoration: none;
-        padding: 8px 20px; /* Reduced padding for smaller size */
-        border-radius: 50px; /* Curved button */
+        padding: 8px 20px; 
+        border-radius: 50px;
         transition: background-color 0.3s ease, color 0.3s ease;
       }
 
       #main-nav ul li a:hover {
-        background-color: #f1c40f; /* Slightly darker yellow on hover */
-        color: black; /* Keep text color black */
+        background-color: #f1c40f; 
+        color: black; 
       }
 
-      /* Other styles for the page */
       .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -167,7 +167,7 @@
         }
       }
 
-      /* Global Celebrations Section */
+ 
       .celebration {
         display: flex;
         align-items: center;
@@ -301,7 +301,7 @@
         <div class="celebration">
           <div class="celebration-icon">
             <span style="font-size: 48px">🎁</span>
-            <!-- Gift Emoji -->
+         
           </div>
           <div class="celebration-text">
             <h3>Koliada - Eastern Europe</h3>
@@ -351,27 +351,21 @@
         </ul>
       </nav>
     </footer>
-
-    <!-- JavaScript for Continuous Snowflakes -->
     <script>
       function createSnowflake() {
         const snowflake = document.createElement("div");
         snowflake.classList.add("snowflake");
-
-        // Random horizontal position
         snowflake.style.left = `${Math.random() * window.innerWidth}px`;
 
-        // Random color: Red, Green, or White
-        const colors = ["#d90429", "#73ba9b", "#ffffff"]; // Red, Green, White
+        const colors = ["#d90429", "#73ba9b", "#ffffff"]; 
         snowflake.style.backgroundColor =
           colors[Math.floor(Math.random() * colors.length)];
 
         document.body.appendChild(snowflake);
 
-        // Remove snowflake after animation completes
         setTimeout(() => {
           snowflake.remove();
-        }, 10000); // Remove after 10 seconds
+        }, 10000); 
       }
       setInterval(createSnowflake, 100);
     </script>
