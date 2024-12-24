@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Winter Solstice Celebrations Around the World</title>
+    <style>
+      :root {
+        --red: #d90429;
+        --dark-green: #283e00;
+        --light-green: #73ba9b;
+        --light-blue: #d5f2e3;
+        --pink: #ef233c;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #d5f2e3, #73ba9b, #003e1f);
+        background-color: var(--light-blue);
+        color: var(--dark-green);
+        position: relative; /* Required for absolute positioning of snowflakes */
+      }
+
+      #main-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--red);
+        padding: 20px;
+        color: white;
+      }
+      #main-nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      #main-nav ul li {
+        margin: 0 10px; /* Adjusted spacing between the buttons */
+      }
+
+      #main-nav ul li a {
+        color: black; /* Black text */
+        background-color: yellow; /* Yellow background */
+        text-decoration: none;
+        padding: 8px 20px; /* Reduced padding for smaller size */
+        border-radius: 50px; /* Curved button */
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      #main-nav ul li a:hover {
+        background-color: #f1c40f; /* Slightly darker yellow on hover */
+        color: black; /* Keep text color black */
+      }
+
+      /* Other styles for the page */
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .card h2,
+      .card h3 {
+        margin-top: 0;
+        color: var(--dark-green);
+      }
+
+      .card p,
+      .card ul {
+        color: var(--dark-green);
+      }
+
+      ul {
+        list-style-type: square;
+        padding-left: 20px;
+      }
+
+      .card ul li {
+        margin-bottom: 8px;
+      }
+
+      #main-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--red);
+        color: white;
+        padding: 20px;
+      }
+
+      #footer-nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      #footer-nav ul li {
+        margin: 0 10px;
+      }
+
+      #footer-nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: var(--dark-green);
+      }
+
+      #footer-nav ul li a:hover {
+        background-color: var(--pink);
+      }
+      .snowflakes {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 10;
+      }
+
+      .snowflake {
+        position: absolute;
+        top: -10px;
+        background-color: white;
+        border-radius: 50%;
+        opacity: 0.8;
+        width: 10px;
+        height: 10px;
+        animation: snowfall 10s linear infinite;
+      }
+
+      @keyframes snowfall {
+        to {
+          transform: translateY(100vh);
+          opacity: 0;
+        }
+      }
+
+      /* Global Celebrations Section */
+      .celebration {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .celebration-icon {
+        font-size: 32px;
+        margin-right: 15px;
+      }
+
+      .celebration h2 {
+        margin: 0;
+        color: #003e1f;
+        font-size: 1.5em;
+      }
+
+      .celebration p {
+        color: #555;
+      }
+
+      .celebration:hover .celebration-icon {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
+
+      .celebration:hover h3 {
+        color: #d90429;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>Celebrating the Winter Solstice</h1>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#science">The Science</a></li>
+          <li><a href="#hemispheres">Solstice Across Hemispheres</a></li>
+          <li><a href="#celebrations">Global Celebrations</a></li>
+          <li><a href="#traditions">Solstice Traditions</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card" id="introduction">
+        <h2>Introduction to the Winter Solstice</h2>
+        <p>
+          The winter solstice marks the shortest day and longest night of the
+          year and symbolizes rebirth and reflection. It's celebrated worldwide
+          for thousands of years.
+        </p>
+      </section>
+
+      <section class="card" id="science">
+        <h2>The Science Behind the Solstice</h2>
+        <p>
+          The Earth's axial tilt causes varying sunlight distribution, resulting
+          in solstices. During winter solstice, one hemisphere tilts farthest
+          from the Sun.
+        </p>
+        <p>
+          In the Northern Hemisphere, it happens around December 21-22, and in
+          the Southern Hemisphere, around June 20-21.
+        </p>
+      </section>
+
+      <section class="card" id="hemispheres">
+        <h2>Solstice Across Hemispheres</h2>
+        <article>
+          <h3>Northern Hemisphere</h3>
+          <p>
+            The December solstice marks the start of winter, with traditions
+            that bring light and warmth during the darkest time of the year.
+          </p>
+        </article>
+        <article>
+          <h3>Southern Hemisphere</h3>
+          <p>
+            The same solstice brings summer, celebrated with outdoor activities,
+            vacations, and enjoying the longest day of the year.
+          </p>
+        </article>
+      </section>
+
+      <section class="card" id="celebrations">
+        <h2>Global Celebrations</h2>
+
+        <div class="celebration">
+          <div class="celebration-icon">
+            <span style="font-size: 48px">❄️</span>
+            <!-- Snowflake Emoji -->
+          </div>
+          <div class="celebration-text">
+            <h3>Newgrange - Ireland</h3>
+            <p>
+              The prehistoric Newgrange monument aligns with the winter solstice
+              sunrise, symbolizing light triumphing over darkness.
+            </p>
+          </div>
+        </div>
+
+        <div class="celebration">
+          <div class="celebration-icon">
+            <span style="font-size: 48px">🌟</span>
+          </div>
+          <div class="celebration-text">
+            <h3>Inti Raymi - Peru</h3>
+            <p>
+              An Incan Sun festival during the solstice, featuring music,
+              dancing, and Sun-honoring rituals.
+            </p>
+          </div>
+        </div>
+
+        <div class="celebration">
+          <div class="celebration-icon">
+            <span style="font-size: 48px">☃️</span>
+          </div>
+          <div class="celebration-text">
+            <h3>Modranicht - Anglo-Saxon</h3>
+            <p>
+              Celebrates "Mother's Night," focusing on fertility, renewal, and
+              honoring female deities.
+            </p>
+          </div>
+        </div>
+
+        <div class="celebration">
+          <div class="celebration-icon">
+            <span style="font-size: 48px">🎁</span>
+            <!-- Gift Emoji -->
+          </div>
+          <div class="celebration-text">
+            <h3>Koliada - Eastern Europe</h3>
+            <p>
+              A Slavic festival involving carols, feasts, and fires to symbolize
+              the return of the Sun.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="traditions">
+        <h2>Common Traditions</h2>
+        <ul>
+          <li>
+            <strong>Bonfires and Candles:</strong> Represent light overcoming
+            darkness.
+          </li>
+          <li><strong>Feasting:</strong> Strengthens community bonds.</li>
+          <li><strong>Gift-Giving:</strong> Symbolizes goodwill.</li>
+          <li>
+            <strong>Decorating with Evergreens:</strong> Signifies eternal life
+            and protection.
+          </li>
+          <li>
+            <strong>Reflection and Renewal:</strong> Time for introspection and
+            goal-setting.
+          </li>
+        </ul>
+      </section>
+
+      <section class="card" id="conclusion">
+        <h2>Conclusion</h2>
+        <p>
+          The winter solstice unites humanity, symbolizing renewal, hope, and
+          connection to the cosmos through diverse traditions worldwide.
+        </p>
+      </section>
+    </main>
+
+    <footer id="main-footer">
+      <p>&copy; 2024 Winter Solstice Celebrations</p>
+      <nav id="footer-nav">
+        <ul>
+          <li><a href="#main-header">Back to Top</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!-- JavaScript for Continuous Snowflakes -->
+    <script>
+      function createSnowflake() {
+        const snowflake = document.createElement("div");
+        snowflake.classList.add("snowflake");
+
+        // Random horizontal position
+        snowflake.style.left = `${Math.random() * window.innerWidth}px`;
+
+        // Random color: Red, Green, or White
+        const colors = ["#d90429", "#73ba9b", "#ffffff"]; // Red, Green, White
+        snowflake.style.backgroundColor =
+          colors[Math.floor(Math.random() * colors.length)];
+
+        document.body.appendChild(snowflake);
+
+        // Remove snowflake after animation completes
+        setTimeout(() => {
+          snowflake.remove();
+        }, 10000); // Remove after 10 seconds
+      }
+      setInterval(createSnowflake, 100);
+    </script>
+  </body>
+</html>
